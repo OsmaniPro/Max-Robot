@@ -66,7 +66,7 @@ from Maxrobot.modules.system_stats import bot_sys_stats
 
 
 PM_START_TEXT = """
-Hey there!👋  My name is Max Robot ⚡️
+Salama'!👋  My name is Osmani Robot ⚡️
 I can manage your  group with lots of useful features, feel free to add me to your group
 """
 
@@ -92,13 +92,13 @@ BUTTONS = [
    
     [
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/MaxrobotSupport"),
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/osmanigroupbot"),
     ],
    
     [
-        InlineKeyboardButton(text="Bot Updates", url=f"https://t.me/SL_Tech_World"),
+        InlineKeyboardButton(text="Bot Updates", url=f"https://t.me/osmanibots"),
         InlineKeyboardButton(
-            text="Rᴇᴘᴏ 📦", url=f"https://github.com/maxsupun"
+            text="Rᴇᴘᴏ 📦", url=f"https://github.com/Ribaj"
         ),
     ],
     [
@@ -115,7 +115,7 @@ BUTTONS = [
 
 TEXT = """ Hey there! I am Max Robot. A next gen powerful Telegram group manager bot for manage with cool, new, smart features With Advanced AI........... 
 Click `Main menu` button for more information.
-Join my [Updates Channel](https://t.me/SL_Tech_World) to get information on all the latest updates.  """
+Join my [Updates Channel](https://t.me/osmanibots) to get information on all the latest updates.  """
 
 MENU = [
     [
@@ -255,7 +255,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Updates", url ="https://t.me/MaxRobot_updates")]],
+                [[InlineKeyboardButton(text="Updates", url ="https://t.me/osmanibots")]],
             ),
         )
     
@@ -378,8 +378,8 @@ def Maxrobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f" @Max123robot🇱🇰 - A bot to manage your groups with additional features!"
-            f"\n\n Here's the basic help regarding use of @TheElizaBot🇱🇰."
+            text=f" @meribaj 🇸🇴 - A bot to manage your groups with additional features!"
+            f"\n\n Here's the basic help regarding use of @osmanibots🇸🇴."
             f"\n\n Almost all modules usage defined in the help menu, checkout by sending `/help`"
             f"\n\n Report error/bugs click the Button ",
             parse_mode=ParseMode.MARKDOWN,
@@ -388,15 +388,15 @@ def Maxrobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🐞 Bugs", url="https://t.me/MaxRobotSupport"
+                            text="🐞 Bugs", url="https://t.me/osmanigroupbot"
                         ),
                         InlineKeyboardButton(
-                            text="🗣 Updates", url="https://t.me/MaxRobot_updates"
+                            text="🗣 Updates", url="https://t.me/osmanibots"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🤕 Donate", url="http://t.me/Max123Robot?start=/donate"
+                            text="🤕 Donate", url="http://t.me/RibLentBot?start=/donate"
                         ),
                         InlineKeyboardButton(
                             text="🔎 Inline search", switch_inline_query_current_chat=""
